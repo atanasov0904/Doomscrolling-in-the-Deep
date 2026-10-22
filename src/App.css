@@ -24,6 +24,11 @@
 h1 { margin: 14px 0; color: #271a0c; font-size: clamp(44px, 8vw, 72px); line-height: .93; letter-spacing: -.065em; }
 .intro { max-width: 46ch; color: #665d53; font-size: 18px; line-height: 1.5; }
 
+.focus-field { display: block; margin: 30px 0; color: #271a0c; font-size: 14px; font-weight: 800; }
+.focus-field input { display: block; width: 100%; margin: 9px 0 8px; padding: 13px 14px; border: 2px solid #bdb09e; border-radius: 10px; outline: none; background: white; color: #271a0c; font: inherit; font-weight: 500; }
+.focus-field input:focus { border-color: #9b1c17; box-shadow: 0 0 0 3px rgba(155, 28, 23, .15); }
+.focus-field small { color: #665d53; font-weight: 500; }
+
 .status { display: flex; gap: 13px; align-items: center; margin: 34px 0 22px; padding: 16px; border-radius: 14px; background: #f2eadc; color: #271a0c; }
 .status-dot { width: 11px; height: 11px; flex: 0 0 auto; border-radius: 50%; background: #2f8a4b; box-shadow: 0 0 0 5px rgba(47, 138, 75, .14); }
 .status strong, .status span { display: block; }
@@ -31,4 +36,5 @@ h1 { margin: 14px 0; color: #271a0c; font-size: clamp(44px, 8vw, 72px); line-hei
 
 .save-button { width: 100%; padding: 15px 18px; border: 0; border-radius: 12px; background: #9b1c17; color: white; cursor: pointer; font: inherit; font-weight: 800; }
 .save-button:hover { background: #7e1511; }
+.save-message { margin: 13px 0 0; color: #2d7041; font-size: 14px; font-weight: 700; text-align: center; }
 .footer-note { margin: 36px 0 0; color: #665d53; font-size: 14px; text-align: center; }
