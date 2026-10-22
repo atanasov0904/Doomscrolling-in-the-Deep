@@ -1,0 +1,34 @@
+.settings-page {
+  width: min(720px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 0;
+}
+
+.wordmark, .eyebrow {
+  color: #9b1c17;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.settings-card {
+  margin-top: 18px;
+  padding: clamp(28px, 6vw, 52px);
+  border: 3px solid #271a0c;
+  border-radius: 24px;
+  background: #fffaf0;
+  box-shadow: 12px 12px 0 #f6c443;
+}
+
+h1 { margin: 14px 0; color: #271a0c; font-size: clamp(44px, 8vw, 72px); line-height: .93; letter-spacing: -.065em; }
+.intro { max-width: 46ch; color: #665d53; font-size: 18px; line-height: 1.5; }
+
+.status { display: flex; gap: 13px; align-items: center; margin: 34px 0 22px; padding: 16px; border-radius: 14px; background: #f2eadc; color: #271a0c; }
+.status-dot { width: 11px; height: 11px; flex: 0 0 auto; border-radius: 50%; background: #2f8a4b; box-shadow: 0 0 0 5px rgba(47, 138, 75, .14); }
+.status strong, .status span { display: block; }
+.status span { margin-top: 3px; color: #665d53; font-size: 14px; }
+
+.save-button { width: 100%; padding: 15px 18px; border: 0; border-radius: 12px; background: #9b1c17; color: white; cursor: pointer; font: inherit; font-weight: 800; }
+.save-button:hover { background: #7e1511; }
+.footer-note { margin: 36px 0 0; color: #665d53; font-size: 14px; text-align: center; }
