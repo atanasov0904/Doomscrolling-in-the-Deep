@@ -56,7 +56,7 @@ async function renderCard() {
       <h2 class="ditd-card__title">McDonald's<br>is hiring.</h2>
       <p class="ditd-card__copy">You have watched enough tiny videos for one sitting. Press the button to see your future.</p>
       <div class="ditd-card__actions">
-        <a class="ditd-card__button ditd-card__button--primary" href="https://careers.mcdonalds.com/" target="_blank" rel="noopener noreferrer">View future opportunities</a>
+        <a class="ditd-card__button ditd-card__button--primary" href="https://mcdonalds.bg/career/" target="_blank" rel="noopener noreferrer">View future opportunities</a>
         <a class="ditd-card__button ditd-card__button--secondary" data-focus-link href="${focusUrl}" target="_blank" rel="noopener noreferrer">Get into the zone now.</a>
         <button class="ditd-card__button ditd-card__button--secondary" type="button" data-snooze>Just a little break tho!</button>
       </div>
@@ -92,9 +92,9 @@ function isShortFormPage() {
     return pathname === '/' || pathname.startsWith('/en/') || pathname.startsWith('/following') || pathname.startsWith('/video/') || pathname.startsWith('/@')
   }
   if (hostname === 'www.instagram.com') return pathname.startsWith('/reel/') || pathname.startsWith('/reels')
+  if (hostname === 'www.facebook.com') return pathname.startsWith('/watch/') || pathname.startsWith('/reel/') || pathname.startsWith('/videos/')
   return false
 }
-
 function handleNavigation() {
   if (isShortFormPage() && canInterrupt()) void renderCard()
 }
